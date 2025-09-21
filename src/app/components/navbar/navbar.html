@@ -1,0 +1,125 @@
+<nav class="bg-white border-b border-gray-200 shadow-sm">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+    <!-- Logo UTFPR -->
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="assets/UTFPR_logo.svg" class="h-16" alt="UTFPR Logo" />
+    </a>
+    
+    <!-- Botão Menu Mobile -->
+    <button 
+    data-collapse-toggle="navbar-dropdown" 
+    type="button" 
+    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 
+           hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 dark:text-gray-400 dark:hover:bg-yellow-100 dark:focus:ring-yellow-300" 
+    aria-controls="navbar-dropdown" 
+    aria-expanded="false">      <span class="sr-only">Abrir menu principal</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    
+    <!-- Menu Principal -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+        
+        <!-- Dropdown Aluno -->
+        <li>
+          <button id="dropdownNavbarLinkAluno" data-dropdown-toggle="dropdownNavbarAluno" class="flex items-center justify-between w-full py-2 px-3 text-black rounded hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto">
+            Aluno 
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <!-- Dropdown menu Aluno -->
+          <div id="dropdownNavbarAluno" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLinkAluno">
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Atualização cadastral</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">E-mail institucional</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Foto do crachá</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Histórico completo</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Identificação digital</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Boletim</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Minha Biblioteca</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Pasta do aluno</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Dropdown Avaliações -->
+        <li>
+          <button id="dropdownNavbarLinkAvaliacoes" data-dropdown-toggle="dropdownNavbarAvaliacoes" class="flex items-center justify-between w-full py-2 px-3 text-black rounded hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto">
+            Avaliações 
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <!-- Dropdown menu Avaliações -->
+          <div id="dropdownNavbarAvaliacoes" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLinkAvaliacoes">
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Avaliação do professor</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Avaliação dos setores</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Dropdown Documentos -->
+        <li>
+          <button id="dropdownNavbarLinkDocumentos" data-dropdown-toggle="dropdownNavbarDocumentos" class="flex items-center justify-between w-full py-2 px-3 text-black rounded hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto">
+            Documentos 
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <div id="dropdownNavbarDocumentos" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-64">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLinkDocumentos">
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Documentos disponibilizados</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Relatório de refeições RU</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Rel. avaliação docente</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Dropdown Matrícula -->
+        <li>
+          <button id="dropdownNavbarLinkMatricula" data-dropdown-toggle="dropdownNavbarMatricula" class="flex items-center justify-between w-full py-2 px-3 text-black rounded hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto">
+            Matrícula 
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <div id="dropdownNavbarMatricula" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-64">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLinkMatricula">
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Nova matrícula</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Disciplinas matriculadas</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Cancelamento de disciplina</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Matrizes curriculares</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Matrícula Calem</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Dropdown Outros -->
+        <li>
+          <button id="dropdownNavbarLinkOutros" data-dropdown-toggle="dropdownNavbarOutros" class="flex items-center justify-between w-full py-2 px-3 text-black rounded hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto">
+            Outros 
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <div id="dropdownNavbarOutros" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-64">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownNavbarLinkOutros">
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Formulário</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Mapa de professores</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Monitoria</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Turmas abertas</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Requerimento online</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-yellow-100">Inscrição - Auxílio Estudantil</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
