@@ -10,10 +10,10 @@ Novo portal web para matrículas em disciplinas para alunos da UTFPR - Projeto a
 ---
 
 ## RA2 - Criar e reutilizar componentes em frameworks frontend
-- [ ] **ID3:** Desenvolveu componentes reutilizáveis aplicáveis em diferentes contextos da aplicação.  
-- [ ] **ID4:** Incorporou componentes de frameworks CSS para aprimorar aparência e funcionalidade.  
+- [x] **ID3:** Desenvolveu componentes reutilizáveis aplicáveis em diferentes contextos da aplicação.  
+- [x] **ID4:** Incorporou componentes de frameworks CSS para aprimorar aparência e funcionalidade.  
 - [ ] **ID5:** Aplicou diretivas estruturais para renderização condicional de elementos.  
-- [ ] **ID6:** Utilizou diretivas estruturais para repetição dinâmica de elementos (listas, galerias, etc.).  
+- [x] **ID6:** Utilizou diretivas estruturais para repetição dinâmica de elementos (listas, galerias, etc.).  
 - [ ] **ID7:** Aplicou Pipes para formatar dados de forma legível e esteticamente agradável.  
 
 ---
@@ -52,6 +52,6 @@ Novo portal web para matrículas em disciplinas para alunos da UTFPR - Projeto a
 ---
 
 ## RA7 - Gerenciar código-fonte e colaboração
-- [ ] **ID25:** Criou repositório no **GitHub** utilizando Gitflow (branches `main` e `develop`).  
-- [ ] **ID26:** Colaborou com merges e resolução de conflitos seguindo boas práticas.  
+- [x] **ID25:** Criou repositório no **GitHub** utilizando Gitflow (branches `main` e `develop`).  
+- [x] **ID26:** Colaborou com merges e resolução de conflitos seguindo boas práticas.  
 - [ ] **ID27:** Configurou e executou o **build** da aplicação e realizou **deploy** em ambiente de hospedagem.  
