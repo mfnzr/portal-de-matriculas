@@ -1,0 +1,39 @@
+<div>
+  <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownCheckbox"
+    class="inline-flex items-center w-full text-gray-900 bg-gray-50 border border-gray-300 rounded-xl text-sm px-4 py-2
+    hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 justify-between"
+    type="button">
+    <!-- Ícone de calendário -->
+    <svg class="w-4 h-4 text-gray-500 me-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    Selecione os dias
+    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="m1 1 4 4 4-4" />
+    </svg>
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownCheckbox"
+    class="z-10 hidden w-48 bg-gray-50 divide-y divide-gray-200 rounded-xl shadow-md"
+    data-popper-placement="bottom">
+    <ul class="p-3 space-y-1 text-sm text-gray-700" aria-labelledby="dropdownCheckboxButton">
+      <li *ngFor="let day of days">
+        <div class="flex items-center p-2 rounded hover:bg-gray-100">
+          <input
+            [id]="day.key"
+            type="checkbox"
+            [value]="day.key"
+            [checked]="day.selected"
+            (change)="toggleDay(day.key, $any($event.target).checked)"
+            class="w-4 h-4 text-yellow-500 bg-gray-50 border border-gray-300 rounded focus:ring-yellow-400 focus:ring-2">
+          <label [for]="day.key" class="ms-2 text-sm font-medium text-gray-900">{{ day.label }}</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

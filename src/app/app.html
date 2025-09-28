@@ -8,8 +8,13 @@
     <div>
       <h3 class="py-2 text-2xl font-semibold text-gray-900">Disciplinas Disponíveis</h3>
       <p class="mb-4 text-gray-600">Selecione as disciplinas que deseja se matricular.</p>
-      <app-table 
-        [schedule]="availableSubjects" 
+      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
+        <div class="flex-1">
+          <app-searchbox (searchChange)="onSearchChange($event)"></app-searchbox>        </div>
+        <app-data-filter (daysSelected)="onDaysSelected($event)"></app-data-filter>
+      </div>
+      <app-table
+        [schedule]="availableSubjects"
         [showCheckbox]="true"
         (itemToggle)="onSubjectToggle($event)">
       </app-table>
@@ -18,8 +23,8 @@
     <!-- Tabela de disciplinas matriculadas -->
     <div>
       <h3 class="py-2 text-2xl font-semibold text-gray-900">Disciplinas Matriculadas</h3>
-      <p class="mb-4 text-gray-600">Caso deseje excluir alguma disciplina basta remover a seleção</p>
-      <app-table 
+      <p class="mb-16 text-gray-600">Caso deseje excluir alguma disciplina basta remover a seleção</p>
+      <app-table
         [schedule]="enrolledSubjects"
         [showCheckbox]="false">
       </app-table>
