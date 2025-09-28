@@ -1,0 +1,9 @@
+.container {
+  max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+  .grid-cols-1.lg\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
