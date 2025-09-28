@@ -1,1 +1,36 @@
-<p>table works!</p>
+<div class="w-auto overflow-x-auto shadow-md sm:rounded-lg border border-gray-200">
+
+  <table class="w-full text-sm text-left rtl:text-right text-gray-700">
+    <thead class="text-xs uppercase bg-white text-gray-700 border-b border-gray-200">
+      <tr>
+        <th scope="col" class="p-4"></th>
+        <th scope="col" class="px-6 py-3">Período</th>
+        <th scope="col" class="px-6 py-3">Disciplina</th>
+        <th scope="col" class="px-6 py-3">Dia</th>
+        <th scope="col" class="px-6 py-3">Horário</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of schedule" class="bg-white border-b border-gray-200 hover:bg-gray-50">
+        <td class="w-4 p-4">
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              [id]="'checkbox-' + item.id"
+              [checked]="item.selected"
+              (change)="onCheckboxChange(item, $event)"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2">
+            <label [for]="'checkbox-' + item.id" class="sr-only">checkbox</label>
+          </div>
+        </td>
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+          {{ item.period }}
+        </th>
+        <td class="px-6 py-4">{{ item.subject }}</td>
+        <td class="px-6 py-4">{{ item.days }}</td>
+        <td class="px-6 py-4">{{ item.hours }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

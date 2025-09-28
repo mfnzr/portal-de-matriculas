@@ -19,16 +19,16 @@ Novo portal web para matrículas em disciplinas para alunos da UTFPR - Projeto a
 ---
 
 ## RA3 - Sincronizar dados entre a interface e o modelo de dados
-- [ ] **ID8:** Aplicou **one-way data binding** (Interpolation, Property Binding).  
-- [ ] **ID9:** Utilizou **event binding** para capturar eventos e manter sincronização com o modelo.  
+- [x] **ID8:** Aplicou **one-way data binding** (Interpolation, Property Binding).  
+- [x] **ID9:** Utilizou **event binding** para capturar eventos e manter sincronização com o modelo.  
 - [ ] **ID10:** Implementou **two-way data binding** para sincronização automática bidirecional.  
-- [ ] **ID11:** Fez uso de **variáveis de template** para manipulação dinâmica dos dados.  
+- [x] **ID11:** Fez uso de **variáveis de template** para manipulação dinâmica dos dados.  
 
 ---
 
 ## RA4 - Implementar comunicação eficaz entre componentes
 - [ ] **ID12:** Criou comunicação entre componentes não hierárquicos via **serviços e injeção de dependência**.  
-- [ ] **ID13:** Utilizou **@Input e @Output** para comunicação entre componentes relacionados hierarquicamente.  
+- [x] **ID13:** Utilizou **@Input e @Output** para comunicação entre componentes relacionados hierarquicamente.  
 
 ---
 
