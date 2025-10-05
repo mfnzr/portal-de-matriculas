@@ -1,6 +1,16 @@
 # portal-de-matriculas
 Novo portal web para matrículas em disciplinas para alunos da UTFPR - Projeto a ser desenvolvido durante as aulas de Desenvolvimento de Aplicações Front-End com Frameworks e Componentes
 
+# Conceito do projeto
+
+Atualmente, o processo de matrícula online da UTFPR apresenta certas limitações, principalmente para os alunos que o realizam pela primeira vez. O sistema vigente pode causar confusão na escolha das disciplinas, sobretudo quando há sobreposição de horários.
+
+Assim, este projeto tem como objetivo desenvolver um portal web intuitivo e automatizado, que compara os horários das disciplinas e identifica possíveis conflitos. Dessa forma, o processo de matrícula torna-se mais simples, rápido e acessível, proporcionando ao estudante uma experiência mais clara e organizada.
+
+# Design System e Protótipo do projeto
+
+https://www.figma.com/design/7FmelBGrzk8Zc9JzPj97Wl/UTFPR-Matr%C3%ADculas?node-id=0-1&p=f&t=KrUmMbFtBDAj81jE-0
+
 # Checklist
 
 ## RA1 - Prototipar e projetar interfaces gráficas de usuário
