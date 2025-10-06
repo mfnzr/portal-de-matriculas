@@ -3,6 +3,7 @@ export interface ScheduleItem {
     period: string;
     subject: string;
     days: string;
+    dayKeys: string[];
     hours: string;
     selected?: boolean;
 }
