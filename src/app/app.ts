@@ -5,10 +5,11 @@ import { Table } from './components/table/table';
 import { ScheduleItem } from './models/schedule.model';
 import { Searchbox } from './components/searchbox/searchbox';
 import { DataFilter } from './components/data-filter/data-filter';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Table, Searchbox, DataFilter],
+  imports: [RouterOutlet, Navbar, Table, Searchbox, DataFilter, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
