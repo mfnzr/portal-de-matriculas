@@ -1,0 +1,49 @@
+import { Injectable } from '@angular/core';
+import PocketBase from 'pocketbase';
+import { ScheduleItem } from '../models/schedule.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PocketbaseService {
+
+  private pb = new PocketBase('http://127.0.0.1:8090');
+
+// converte nomes PT-BR → keys do filtro
+  readonly DAY_MAP: Record<string, string> = {
+    'segunda': 'monday',
+    'terça': 'tuesday',
+    'terca': 'tuesday',
+    'quarta': 'wednesday',
+    'quinta': 'thursday',
+    'sexta': 'friday',
+    'sábado': 'saturday',
+    'sabado': 'saturday',
+    'domingo': 'sunday',
+  };
+
+  async getSchedules(): Promise<ScheduleItem[]> {
+    const result = await this.pb.collection('schedules').getList(1, 500);
+
+    return result.items.map((item: any) => {
+      const rawDays = item.class_days.toLowerCase().split(' e ');
+
+      return {
+        id: Number(item.id),
+        subject: item.name,
+        period: item.period,
+        hours: item.class_hours,
+        days: item.class_days,
+
+        // aqui a conversão mágica
+        dayKeys: rawDays
+          .map((d: string) => this.DAY_MAP[d.trim()] ?? null)
+          .filter(Boolean) as string[],
+
+        selected: false
+      };
+    });
+  }
+
+
+}

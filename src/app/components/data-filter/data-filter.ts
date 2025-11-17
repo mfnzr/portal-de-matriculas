@@ -10,11 +10,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class DataFilter {
  days = [
-    { key: 'monday', label: 'Segunda-feira', selected: false },
-    { key: 'tuesday', label: 'Terça-feira', selected: false },
-    { key: 'wednesday', label: 'Quarta-feira', selected: false },
-    { key: 'thursday', label: 'Quinta-feira', selected: false },
-    { key: 'friday', label: 'Sexta-feira', selected: false },
+    { key: 'monday', label: 'Segunda', selected: false },
+    { key: 'tuesday', label: 'Terça', selected: false },
+    { key: 'wednesday', label: 'Quarta', selected: false },
+    { key: 'thursday', label: 'Quinta', selected: false },
+    { key: 'friday', label: 'Sexta', selected: false },
     { key: 'saturday', label: 'Sábado', selected: false },
     { key: 'sunday', label: 'Domingo', selected: false },
   ];
