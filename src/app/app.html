@@ -1,35 +1,7 @@
-<app-navbar />
-
-<div class="container mx-auto px-6 py-8">
-  <h1 class="py-6 text-4xl font-bold text-gray-900">Nova Matrícula</h1>
-
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    <!-- Tabela de disciplinas disponíveis -->
-    <div>
-      <h3 class="py-2 text-2xl font-semibold text-gray-900">Disciplinas Disponíveis</h3>
-      <p class="mb-4 text-gray-600">Selecione as disciplinas que deseja se matricular.</p>
-      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-        <div class="flex-1">
-          <app-searchbox (searchChange)="onSearchChange($event)"></app-searchbox>        </div>
-        <app-data-filter (daysSelected)="onDaysSelected($event)"></app-data-filter>
-      </div>
-      <app-table
-        [schedule]="availableSubjects"
-        [showCheckbox]="true"
-        (itemToggle)="onSubjectToggle($event)">
-      </app-table>
-    </div>
-
-    <!-- Tabela de disciplinas matriculadas -->
-    <div>
-      <h3 class="py-2 text-2xl font-semibold text-gray-900">Disciplinas Matriculadas</h3>
-      <p class="mb-16 text-gray-600">Caso deseje excluir alguma disciplina basta remover a seleção</p>
-      <app-table
-        [schedule]="enrolledSubjects"
-        [showCheckbox]="false">
-      </app-table>
-    </div>
+<div class="min-h-screen flex flex-col bg-gray-100">
+  <div class="flex-1 overflow-y-auto">
+    <router-outlet></router-outlet>
   </div>
+
+  <app-footer />
 </div>
-<app-footer></app-footer>
-<router-outlet />
