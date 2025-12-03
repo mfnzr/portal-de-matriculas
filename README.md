@@ -55,12 +55,12 @@ Miguel Eduardo Michalczyszyn
 ---
 
 ## RA6 - Realizar requisições assíncronas para serviços web
-- [ ] **ID18:** Fez requisições assíncronas a uma API pública (GET).  
-- [ ] **ID19:** Fez requisições a uma API simulada (GET, POST, PUT, PATCH, DELETE).  
+- [x] **ID18:** Fez requisições assíncronas a uma API pública (GET).  
+- [x] **ID19:** Fez requisições a uma API simulada (GET, POST, PUT, PATCH, DELETE).  
 - [x] **ID20:** Tratou respostas de sucesso e erros de forma apropriada.  
 - [ ] **ID21:** Aplicou validações com **REGEX** e exibiu mensagens de erro claras.  
-- [ ] **ID22:** Desabilitou o botão **submit** quando havia campos inválidos.  
-- [ ] **ID23:** Utilizou **Promises** para tratamento de respostas assíncronas.  
+- [x] **ID22:** Desabilitou o botão **submit** quando havia campos inválidos.  
+- [x] **ID23:** Utilizou **Promises** para tratamento de respostas assíncronas.  
 - [ ] **ID24:** Utilizou **Observables** para tratamento de respostas assíncronas.  
 
 ---
