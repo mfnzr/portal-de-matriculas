@@ -41,23 +41,23 @@ Miguel Eduardo Michalczyszyn
 ---
 
 ## RA4 - Implementar comunicação eficaz entre componentes
-- [ ] **ID12:** Criou comunicação entre componentes não hierárquicos via **serviços e injeção de dependência**.  
+- [x] **ID12:** Criou comunicação entre componentes não hierárquicos via **serviços e injeção de dependência**.  
 - [x] **ID13:** Utilizou **@Input e @Output** para comunicação entre componentes relacionados hierarquicamente.  
 
 ---
 
 ## RA5 - Criar interfaces de navegação intuitivas (SPA)
-- [ ] **ID14:** Configurou rotas para diferentes partes da aplicação.  
-- [ ] **ID15:** Passou dados entre telas usando parâmetros de rotas.  
+- [x] **ID14:** Configurou rotas para diferentes partes da aplicação.  
+- [x] **ID15:** Passou dados entre telas usando parâmetros de rotas.  
 - [ ] **ID16:** Criou navegação aninhada para representar hierarquias de conteúdo.  
-- [ ] **ID17:** Aplicou **guardas de rotas** para controle de acesso.  
+- [x] **ID17:** Aplicou **guardas de rotas** para controle de acesso.  
 
 ---
 
 ## RA6 - Realizar requisições assíncronas para serviços web
 - [ ] **ID18:** Fez requisições assíncronas a uma API pública (GET).  
 - [ ] **ID19:** Fez requisições a uma API simulada (GET, POST, PUT, PATCH, DELETE).  
-- [ ] **ID20:** Tratou respostas de sucesso e erros de forma apropriada.  
+- [x] **ID20:** Tratou respostas de sucesso e erros de forma apropriada.  
 - [ ] **ID21:** Aplicou validações com **REGEX** e exibiu mensagens de erro claras.  
 - [ ] **ID22:** Desabilitou o botão **submit** quando havia campos inválidos.  
 - [ ] **ID23:** Utilizou **Promises** para tratamento de respostas assíncronas.  
