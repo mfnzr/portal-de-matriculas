@@ -59,7 +59,6 @@ export class PocketbaseService {
         hours: item.class_hours,
         days: item.class_days,
 
-        // aqui a conversão mágica
         dayKeys: rawDays
           .map((d: string) => this.DAY_MAP[d.trim()] ?? null)
           .filter(Boolean) as string[],
