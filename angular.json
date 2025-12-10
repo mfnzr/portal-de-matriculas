@@ -36,7 +36,7 @@
               "node_modules/flowbite/dist/flowbite.min.js"
             ],
             "outputPath": "dist",
-            "baseHref": "/potal-de-matriculas"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
