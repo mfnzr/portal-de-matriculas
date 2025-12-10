@@ -68,4 +68,4 @@ Miguel Eduardo Michalczyszyn
 ## RA7 - Gerenciar código-fonte e colaboração
 - [x] **ID25:** Criou repositório no **GitHub** utilizando Gitflow (branches `main` e `develop`).  
 - [x] **ID26:** Colaborou com merges e resolução de conflitos seguindo boas práticas.  
-- [ ] **ID27:** Configurou e executou o **build** da aplicação e realizou **deploy** em ambiente de hospedagem.  
+- [x] **ID27:** Configurou e executou o **build** da aplicação e realizou **deploy** em ambiente de hospedagem.  
